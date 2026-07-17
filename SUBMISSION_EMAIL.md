@@ -1,4 +1,4 @@
-Subject: AI Engineering Internship Assignment - <Niraj Kumar Thakur>
+Subject: AI Engineering Internship Assignment - NirajKumarThakur
 
 Hi Tri9T AI team,
 
@@ -10,4 +10,4 @@ Please find my submission here:
 The README includes setup instructions and an end-to-end v1-to-v2 staleness demonstration. One note: I received only the assignment PDF, not the referenced CT-200 data attachment, so I created and clearly documented representative manuals to demonstrate the required parsing and versioning behavior.
 
 Regards,  
-<Niraj Kumar Thakur>
+Niraj Kumar Thakur
