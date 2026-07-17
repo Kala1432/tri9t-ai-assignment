@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    container_name: tri9t-ai-assignment
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/ct200.db
+      GENERATION_STORE: /app/data/generations
+      LLM_MODE: mock
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health').read()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
