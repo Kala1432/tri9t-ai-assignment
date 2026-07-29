@@ -21,8 +21,3 @@ jobs:
       run: pytest
     - name: Build Docker image
       run: docker build -t tri9t-ai-assignment .
-    - name: Deploy
-      if: github.ref == 'refs/heads/main'
-      env:
-        AWS_REGION: ${{ secrets.AWS_REGION }}
-      run: echo 'Add your deploy command here'
